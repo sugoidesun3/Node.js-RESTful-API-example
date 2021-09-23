@@ -4,21 +4,22 @@ const taskController  = require("../controllers/feed");
 
 const router = express.Router();
 /* ALL ROUTES WILL BE PROTECTED BY A MIDDLEWARE CHECKING FOR A JWT */
+// (currently not implemented)
 
-// GET /app/tasks
+// GET /app/feed/tasks
 router.get('/tasks', taskController.getTasks);
 
-// GET /app/tasks/!id
-router.get('/tasks', taskController.getSingleTask);
+// GET /app/feed/tasks/:id
+router.get('/tasks/:id', taskController.getSingleTask);
 
-// POST /app/tasks
+// POST /app/feed/tasks
 router.post("/tasks", taskController.addTask);
 
-// PATCH /app/tasks/!id
-router.patch("/tasks", taskController.updateTask);
+// PUT /app/feed/tasks/:id
+router.put("/tasks/:id", taskController.updateTask);
 
-// DELETE /app/tasks/!id
-router.delete("/tasks", taskController.deleteTask);
+// DELETE /app/feed/tasks/:id
+router.delete("/tasks/:id", taskController.deleteTask);
 
 
 module.exports = router;

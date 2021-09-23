@@ -2,7 +2,7 @@
   "name": "exemplo_restful_nodejs",
   "version": "1.0.0",
   "description": "quick stuff to show my knowledge",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
